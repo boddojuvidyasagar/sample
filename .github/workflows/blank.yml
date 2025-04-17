@@ -1,4 +1,4 @@
-name: dockerloginDEVQA
+name: dockerloginDev
 
 # Controls when the workflow will run
 on:
@@ -9,7 +9,7 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 jobs:
-  LogintodockerhubDEV:
+  LogintodockerhubDev:
     runs-on: ubuntu-latest
     environment: Dev
     steps:
