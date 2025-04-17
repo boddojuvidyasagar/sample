@@ -20,9 +20,9 @@ jobs:
        registry: registry-1.docker.io
        username: ${{secrets.DOCKERHUBUSERNAME}}
        password: ${{secrets.DOCKERHUBPASSWORD}}
-  LogintodockerhubQA:
+  LogintodockerhubTest:
     runs-on: ubuntu-latest
-    environment: QA
+    environment: Test
     steps:
     - uses: actions/checkout@v3
     - name: docker login
